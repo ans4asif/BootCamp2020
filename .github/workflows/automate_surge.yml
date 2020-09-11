@@ -32,6 +32,6 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge 
-        run: surge ./illustrious-friction.surge.sh --token ${{secrets.surge_token}}
+        run: surge ./ illustrious-friction.surge.sh --token ${{secrets.surge_token}}
          
 
